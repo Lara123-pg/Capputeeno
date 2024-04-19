@@ -15,11 +15,11 @@ const Container = styled.div`
 
     section {
         display: flex;
-        align-items: center;
+        justify-content: center;
         width: 100%;
         gap: 32px;
         margin-top: 24px;
-
+    
         img {
             max-width: 640px;
             width: 50%;
@@ -110,7 +110,7 @@ export default function Product({ searchParams }: { searchParams: { id: string }
             <Container>
                 <BackButton navigate="/" />
                 <section>
-                    <img src={data?.image_url} alt={data?.name}/>
+                    <img src={`${data?.image_url}`} alt={`${data?.name}`}/>
                     <div>
                         <ProductInfo>
                             <span>{data?.category}</span>
