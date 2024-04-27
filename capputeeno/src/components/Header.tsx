@@ -47,7 +47,7 @@ const Logo = styled.a`
 `
 
 export function Header() {
-    const { search ,setSearch } = useFilter()
+    const { search, setSearch } = useFilter()
 
     return (
         <TagHeader>
